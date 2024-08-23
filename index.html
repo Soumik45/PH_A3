@@ -24,7 +24,14 @@
             btn_clr: 'rgb(171, 239, 95)' ,
             btn_clr2: 'rgba(171, 239, 95,0.5)',
             secondary_clr: 'rgb(115, 115, 115)',
-            border_clr: 'rgb(233, 233, 233)'
+            border_clr: 'rgb(233, 233, 233)',
+            white_trans:'rgba(255,255,255,0)',
+            full_bg: 'rgb(244,244,244)',
+            'custom-pink': 'rgb(231, 193, 211)',
+            'custom-yellow': 'rgb(239, 218, 110)',
+            'custom-green': 'rgb(164, 218, 195);',
+            'custom-blue': 'rgb(119, 170, 234)'
+
           }, 
           fontFamily:{
              manrope: "Manrope",
@@ -36,10 +43,11 @@
 
 
 </head>
-<body data-theme="light" class="font-manrope">
+<body data-theme="light" class="font-manrope bg-full_bg" >
 
- <header class="bg-gradient-to-t from-white to-[rgba(255,255,255,0)]">
-  <section class="w-11/12  lg:w10/12 mx-auto pt-6">
+ <header class="w-[95%] mx-auto bg-gradient-to-t from-white to-white_trans">
+ 
+  <section class="  lg:w11/12 mx-auto pt-2 ">
     
     <!--navbar-->
     <div class="navbar ">
@@ -163,8 +171,173 @@
   
  </header>
 
-  <main>
+  <main class="bg-full_bg">
 
+    <!--Hero1 -->
+
+   <div class="w-10/12 mx-auto mt-20 mb-20 grid grid-cols-1 lg:grid-cols-2 gap-10"> 
+    <div class="flex flex-col justify-center relative">
+       <!--Grid part starts-->
+
+      <button class="w-max btn bg-white  font-semibold rounded-3xl pt-0">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+        </svg>
+        
+        About Us
+      </button>
+
+     <img class="hidden lg:inline absolute -top-8 -left-20" src="./assets/Vector.png" alt="">
+
+      <h2 class="text-4xl mt-6 leading-10 font-semibold">
+        We design thoughtful, <br> liveable spaces
+      </h2>
+      <p class="text-base font-medium mt-10">The barn house captivates with its blend of rustic charm and 
+        modern sophistication, featuring weathered wood, sleek metal accents.</p>
+
+
+
+      <div class=" mt-10 gap-5 flex flex-col">
+        <div class="space-y-2 flex bg-white p-6 rounded-xl gap-3">
+          <img class="w-auto h-min lg:h-auto" src="./assets/commercial.png" alt="">
+          <div class="mx-3">
+            <h3 class="font-semibold text-xl">Commercial</h3>
+            <p class="secondary_clr mr-28">The barn house captivates with its blend of rustic charm and modern.</p>
+          </div>
+  
+  
+        </div>
+  
+        <div class="space-y-2 flex bg-white p-6 rounded-xl gap-3">
+          <img class="w-auto h-min lg:h-full" src="./assets/residential.png" alt="">
+          <div class="mx-3">
+            <h3 class="font-semibold text-xl">Residential</h3>
+            <p class="secondary_clr mr-28">The barn house captivates with its blend of rustic charm and modern.</p>
+          </div>
+  
+      </div>
+
+
+
+      </div>
+
+
+    </div>
+    <div class="rounded-2xl mb-2">
+      <img class="w-full h-full " src="./assets/Rectangle.png" alt="">
+
+
+    </div>
+
+
+   </div>
+
+   <!--stat part-->
+
+   <div class="grid grid-cols-1 lg:grid-cols-4 bg-white rounded-2xl w-11/12 lg:w-10/12 mx-auto mb-14">
+    <div class="p-10 flex flex-col items-center gap-2">
+      <svg class="w-10 h-10" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M8.625 9.75a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0H8.25m4.125 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0H12m4.125 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0h-.375m-13.5 3.01c0 1.6 1.123 2.994 2.707 3.227 1.087.16 2.185.283 3.293.369V21l4.184-4.183a1.14 1.14 0 0 1 .778-.332 48.294 48.294 0 0 0 5.83-.498c1.585-.233 2.708-1.626 2.708-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0 0 12 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018Z" />
+      </svg>
+      <h4 class="text-2xl font-bold">235+</h4>
+      <p class="text-secondary_clr">Happy client reviews</p>
+
+      
+    </div>
+
+
+    <div class="p-10 flex flex-col items-center gap-2">
+      <svg class="w-10 h-10" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9Z" />
+      </svg>
+      
+      <h4 class="text-2xl font-bold">50+</h4>
+      <p class="text-secondary_clr">Work Department</p>
+    </div>
+
+
+    <div class="p-10 flex flex-col items-center gap-2">
+      <svg class="w-10 h-10" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M18 18.72a9.094 9.094 0 0 0 3.741-.479 3 3 0 0 0-4.682-2.72m.94 3.198.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0 1 12 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 0 1 6 18.719m12 0a5.971 5.971 0 0 0-.941-3.197m0 0A5.995 5.995 0 0 0 12 12.75a5.995 5.995 0 0 0-5.058 2.772m0 0a3 3 0 0 0-4.681 2.72 8.986 8.986 0 0 0 3.74.477m.94-3.197a5.971 5.971 0 0 0-.94 3.197M15 6.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm6 3a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Zm-13.5 0a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Z" />
+      </svg>
+      
+  
+
+      <h4 class="text-2xl font-bold">30k+</h4>
+      <p class="text-secondary_clr">Working people</p>
+    </div>
+
+
+    <div class="p-10 flex flex-col items-center gap-2 ">
+      
+        <svg class="w-10 h-10" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" />
+        </svg>
+  
+      
+      
+
+      <h4 class="text-2xl font-bold">307+</h4>
+      <p class="text-secondary_clr">Staff members</p>
+    </div>
+
+   </div>
+
+
+   <!--How we work-->
+   <div class="text-center  mb-8">
+    <button class="w-max btn bg-white  font-semibold rounded-3xl pt-0 mb-4">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+      </svg>
+      
+      How we work
+    </button>
+
+    <h2 class="font-extrabold text-3xl mb-4">Our Works Process</h2>
+    <p class="lg:w-[50%] mx-auto text-lg text-[rgb(73, 73, 73)] mb-8"> The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.</p>
+
+
+   </div>
+
+   <!--4cards -->
+   <div class="grid grid-cols-1 lg:grid-cols-4 w-10/12 mx-auto mb-10 gap-5 ">
+
+    <div class="bg-custom-pink rounded-2xl p-5">
+      <img src="./assets/concept.png" alt="">
+      <h3 class="text-2xl font-semibold">Concept</h3>
+      <p class="font-medium  text-secondary_clr mr-5">House design involves planning and creating the layout, structure, and aesthetics of a home to meet the needs and preferences of its occupants.</p>
+
+    </div>
+
+    <div class="bg-custom-yellow rounded-2xl p-5">
+      <img src="./assets/flow-chart.png" alt="">
+      <h3 class="text-2xl font-semibold">Design Process</h3>
+      <p class="font-medium  text-secondary_clr mr-5">House design involves planning and creating the layout, structure, and aesthetics of a home to meet the needs and preferences of its occupants.</p>
+
+    </div>
+    
+    <div class="bg-custom-green rounded-2xl p-5">
+      <img src="./assets/vision.png" alt="">
+      <h3 class="text-2xl font-semibold">Supervision</h3>
+      <p class="font-medium  text-secondary_clr mr-5">House design involves planning and creating the layout, structure, and aesthetics of a home to meet the needs and preferences of its occupants.</p>
+
+    </div>
+
+     <div class="bg-custom-blue rounded-2xl p-5">
+      <img src="./assets/budget-planning.png" alt="">
+      <h3 class="text-2xl font-semibold">Budget Plainning</h3>
+      <p class="font-medium  text-secondary_clr mr-5">House design involves planning and creating the layout, structure, and aesthetics of a home to meet the needs and preferences of its occupants.</p>
+
+    </div>
+   </div>
+
+
+
+
+
+
+    
   </main>
 
   <footer>
